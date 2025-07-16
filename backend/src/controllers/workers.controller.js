@@ -5,8 +5,8 @@ import Worker from "../models/workers.model.js";
 import { sendEmail } from "../config/nodemailer.js";
 import Session from "../models/Sessions.model.js";
 import Task from "../models/task.model.js";
-import Admin from "../models/Admin.model.js";
 import { v2 as cloudinary } from "cloudinary";
+import Admin from '../models/Admin.model.js';
 
 export const loginWorker = AsyncHandler(async (req, res) => {
   const { email, password } = req.body;
