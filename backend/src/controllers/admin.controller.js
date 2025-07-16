@@ -1,7 +1,6 @@
 import ApiError from "../utils/ApiError.js";
 import ApiResponse from "../utils/ApiResponse.js";
 import AsyncHandler from "../utils/AysnHandler.js";
-import Admin from "../models/Admin.model.js";
 import { sendEmail } from "../config/nodemailer.js";
 import Worker from "../models/workers.model.js";
 import Task from "../models/task.model.js";
@@ -10,7 +9,10 @@ import crypto from "crypto";
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs/promises";
 import { io, workerSocketMap,  } from "../../server.js";
+import Admin from "../models/Admin.model.js";
 
+
+Admin
 export const createAdmin = AsyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
 
