@@ -57,6 +57,34 @@ app.use((_, res) => {
   res.status(404).send("404 Not Found");
 });
 
+
+
+app.get('/debug/models', (req, res) => {
+  const modelsDir = path.resolve('./src/models');
+
+  fs.readdir(modelsDir, (err, files) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Error reading models directory');
+    }
+    console.log('Files in models:', files);
+    res.json({ models: files });
+  });
+});
+
+import fs from 'fs';
+import path from 'path';
+
+const modelsDir = path.resolve('./src/models');
+
+fs.readdir(modelsDir, (err, files) => {
+  if (err) {
+    console.error('Error reading models dir:', err);
+  } else {
+    console.log('Files in models:', files);
+  }
+});
+
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
