@@ -6,7 +6,7 @@ import mobile_banner from "./main.png";
 import welcome_page from "./welcomePage.png";
 import avatar_icon from "./avatar_icon.png";
 import user_icon from "./user_icon.png";
-import workerBanner from "./workerBanner.png"
+import workerBanner from "./WorkerBanner.png"
 import employee_img from "./EmployeSettings.png"
 
 export const assests = {
