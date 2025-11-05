@@ -9,6 +9,9 @@ import workersRouter from "./src/routes/workers.route.js";
 import connectCloudinary from "./src/config/connectCloudinary.js";
 import messageRouter from "./src/routes/message.route.js";
 import { Server } from "socket.io";
+import path from "path";
+
+const _dirname = path.resolve();
 
 await connectCloudinary();
 await connectDB();
@@ -52,6 +55,12 @@ app.use(cors({ origin: allowedOrigin, credentials: true }));
 app.use("/api/admin", adminRouter);
 app.use("/api/worker", workersRouter);
 app.use("/api/message", messageRouter);
+
+app.use(express.static(path.join(_dirname, "./frontend/dist")));
+
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
+});
 
 app.use((_, res) => {
   res.status(404).send("404 Not Found");

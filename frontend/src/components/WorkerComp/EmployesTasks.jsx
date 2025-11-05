@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import Details from "./Details";
 import { assests } from "../../assets/assests";
 import { useWorkerContext } from "../../context/WorkerContext";
@@ -211,7 +211,7 @@ const EmployesTasks = () => {
                   </div>
                   <div>
                     <span className="font-extrabold text-black">Payment:</span>{" "}
-                    ₹{selectedTask.payment}
+                    â‚¹{selectedTask.payment}
                   </div>
                   <div>
                     <span className="font-extrabold text-black">Status: </span>

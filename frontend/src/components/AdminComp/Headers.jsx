@@ -1,3 +1,4 @@
+﻿import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../context/AppConext";
 import axios from "axios";
@@ -75,7 +76,7 @@ const Headers = () => {
             } drop-shadow-lg text-center sm:text-left`}
           >
             <h1 className="mt-2 text-xl sm:text-2xl font-bold">
-              Welcome, Admin👋
+              Welcome, AdminðŸ‘‹
             </h1>
             {!isAdmin && (
               <p className="text-red-500 text-base sm:text-lg">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+﻿import React, { useEffect } from "react";
 import { assests } from "../../assets/assests";
 import Details from "./Details";
 import { useWorkerContext } from "../../context/WorkerContext";

@@ -1,3 +1,4 @@
+﻿import React from "react";
 const RecentBox = ({ data, isSelected, setToShow }) => {
   return (
     <div className="p-2 w-full">

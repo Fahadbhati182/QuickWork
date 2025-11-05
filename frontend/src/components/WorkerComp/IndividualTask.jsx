@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 const statusStyles = {
   active: {
@@ -44,7 +44,7 @@ const IndividualTask = ({
       <div className="flex items-center mb-3">
         <span className="text-white text-sm mr-2">Payment:</span>
         <span className="bg-white/30 text-white font-medium text-sm px-3 py-1 rounded-full">
-          ₹{payment}
+          â‚¹{payment}
         </span>
       </div>
 

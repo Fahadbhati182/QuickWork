@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { FaLock } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
@@ -159,7 +159,7 @@ const Login = () => {
               Login
             </button>
             <p className="text-gray-500/90 text-xs md:text-sm mt-3 md:mt-4">
-              Don’t have an account?{" "}
+              Donâ€™t have an account?{" "}
               <NavLink
                 className="text-indigo-400 hover:underline"
                 to={"/signup"}

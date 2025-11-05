@@ -1,3 +1,4 @@
+﻿import React from "react";
 import RecentBox from "./RecentBox";
 
 const Details = ({ datas, isSelected, flexWrap, setToShow }) => {
